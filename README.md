@@ -1,8 +1,8 @@
 # FixedPointToolbox.jl
 
-[![Build Status](https://github.com/Anjishnubose/FixedPointToolkit.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Anjishnubose/FixedPointToolkit.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Build Status](https://github.com/Anjishnubose/FixedPointToolbox.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Anjishnubose/FixedPointToolbox.jl/actions/workflows/CI.yml?query=branch%3Amain)
 
-FixedPointToolkit.jl is a Julia package meant for calculating fixed points of any scalar or vector functions, or equivalently, solve some system of self-consistent equations.
+FixedPointToolbox.jl is a Julia package meant for calculating fixed points of any scalar or vector functions, or equivalently, solve some system of self-consistent equations.
 
 Currently supported :
 * Fixed point iteration can work on any user defined function.
@@ -13,4 +13,4 @@ Currently supported :
 * Can plot results of inputs, outputs, and convergence as a function of iterations.
 
 ## Documentation
-For further details, please refer to [Documentation](https://anjishnubose.github.io/FixedPointToolkit.jl/)
+For further details, please refer to [Documentation](https://anjishnubose.github.io/FixedPointToolbox.jl/)

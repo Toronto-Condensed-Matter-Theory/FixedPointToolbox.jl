@@ -1,4 +1,4 @@
-using LinearAlgebra, Test, FixedPointToolkit
+using LinearAlgebra, Test, FixedPointToolbox
 """
 Testing of the self consistency code for simpler multivariate functions using all three implemented methods
 """

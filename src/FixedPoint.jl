@@ -11,7 +11,7 @@ module FPoint
 @doc """
 ```julia
 FixedPoint!(SC::SelfCons; tol::Float64=1e-6, max_iter::Int64=100) 
-FixedPoint!(SC::SelfCons, fileName::String; tol::Float64=1e-6, max_iter::Int64=100, checkpoint_interval::Int64 = 10) 
+FixedPoint!(SC::SelfCons, fileName::String; tol::Float64=1e-6, max_iter::Int64=100, checkpoint_interval::Int64 = 10, save_checkpoints::Bool = true) 
 ```
 
 Runs a fixed point iteration on the `SelfCons` SC with a convergence tolerance of `tol` per input, and a maximum iteration cutoff of `max_iter`.
@@ -45,7 +45,7 @@ Optionally can also pass a `fileName` to checkpoint and save the results in. Can
 
     end
 
-    function FixedPoint!(SC::SelfCons, fileName::String; tol::Float64=1e-6, max_iter::Int64=100, checkpoint_interval::Int64 = 10, _extra...) 
+    function FixedPoint!(SC::SelfCons, fileName::String; tol::Float64=1e-6, max_iter::Int64=100, checkpoint_interval::Int64 = 10, save_checkpoints::Bool = true, _extra...) 
 
         SelfConsParams  =   Dict(:iter => 0, :max_iter => max_iter, :tol => tol, :checkpoint_interval => checkpoint_interval)
 
@@ -63,7 +63,7 @@ Optionally can also pass a `fileName` to checkpoint and save the results in. Can
             push!(SC.VIns, updates["VInNext"])
             push!(SC.VOuts, updates["VOutNext"])
 
-            if iter == 1 || (iter % checkpoint_interval) == 0 || iter == max_iter
+            if save_checkpoints && (iter == 1 || (iter % checkpoint_interval) == 0 || iter == max_iter)
                 save_checkpoint(fileName, SC, SelfConsParams)
                 @info "Checkpoint Saved in $(fileName)."
             end
@@ -71,8 +71,10 @@ Optionally can also pass a `fileName` to checkpoint and save the results in. Can
             if updates["Delta"] < tol
                 @info "Converged within tolerance = $(tol)"
 
-                save_checkpoint(fileName, SC, SelfConsParams)
-                @info "Result Saved in $(fileName)."
+                if save_checkpoints
+                    save_checkpoint(fileName, SC, SelfConsParams)
+                    @info "Result Saved in $(fileName)."
+                end
 
                 break
             end

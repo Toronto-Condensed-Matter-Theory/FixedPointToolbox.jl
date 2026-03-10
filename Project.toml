@@ -1,5 +1,5 @@
 name = "FixedPointToolbox"
-uuid = "081f7a28-ac82-48c1-a10e-fa8b3349a52a"
+uuid = "0de1d71a-ce40-41ac-9724-bc943b23ae8b"
 authors = ["Anjishnu Bose <anjishnubose98@gmail.com>", "Samuel Vadnais <samuel.vadnais@utoronto.ca>", "Andrew Hardy <andrewkoehlerhardy@gmail.com>"]
 version = "1.0.1"
 
@@ -13,7 +13,7 @@ Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 JLD2 = "^0.4"
 Logging = "^1.6.7"
 Plots = "^1.38"
-julia = "^1.7, ^1.9"
+julia = "1.10"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
