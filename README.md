@@ -1,8 +1,8 @@
 # FixedPointToolbox.jl
 
-[![Build Status](https://https://github.com/Toronto-Condensed-Matter-TheoryFixedPointToolbox.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://https://github.com/Toronto-Condensed-Matter-TheoryFixedPointToolbox.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Build Status](https://https://github.com/Toronto-Condensed-Matter-Theory/FixedPointToolbox.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://https://github.com/Toronto-Condensed-Matter-Theory/FixedPointToolbox.jl/actions/workflows/CI.yml?query=branch%3Amain)
 
-FixedPointToolbox.jl is a Julia package meant for calculating fixed points of any scalar or vector functions, or equivalently, solve some system of self-consistent equations. It is an updated version of the [FixedPointToolkit.jl](https://https://github.com/Toronto-Condensed-Matter-TheoryFixedPointToolkit.jl)
+FixedPointToolbox.jl is a Julia package meant for calculating fixed points of any scalar or vector functions, or equivalently, solve some system of self-consistent equations. It is an updated version of the [FixedPointToolkit.jl](https://https://github.com/Anjishnubose/FixedPointToolkit.jl)
 
 Currently supported :
 * Fixed point iteration can work on any user defined function.
@@ -13,4 +13,4 @@ Currently supported :
 * Can plot results of inputs, outputs, and convergence as a function of iterations.
 
 ## Documentation
-For further details, please refer to [Documentation](https://anjishnubose.github.io/FixedPointToolbox.jl/)
+For further details, please refer to [Documentation](https://Toronto-Condensed-Matter-Theory.github.io/FixedPointToolbox.jl/)
