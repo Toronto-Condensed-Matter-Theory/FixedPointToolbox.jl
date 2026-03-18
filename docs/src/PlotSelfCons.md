@@ -1,7 +1,7 @@
-# FixedPointToolbox.PlotSelfCons
+# FixedPointToolkit.PlotSelfCons
 
 ```@autodocs
-Modules = [FixedPointToolbox, FixedPointToolbox.PlotSelfCons]
+Modules = [FixedPointToolkit, FixedPointToolkit.PlotSelfCons]
 Private = false
 Pages   = ["PlotSelfCons.jl"]
 ```

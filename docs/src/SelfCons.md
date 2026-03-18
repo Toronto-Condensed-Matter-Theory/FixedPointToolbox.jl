@@ -1,7 +1,7 @@
-# FixedPointToolbox.SelfConsistency
+# FixedPointToolkit.SelfConsistency
 
 ```@autodocs
-Modules = [FixedPointToolbox, FixedPointToolbox.SelfConsistency]
+Modules = [FixedPointToolkit, FixedPointToolkit.SelfConsistency]
 Private = false
 Pages   = ["SelfCons.jl"]
 ```

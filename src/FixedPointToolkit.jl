@@ -1,4 +1,4 @@
-module FixedPointToolbox
+module FixedPointToolkit
 
     include("Scheduler.jl")
     using .Scheduler
@@ -24,4 +24,4 @@ module FixedPointToolbox
     using .PlotSelfCons
     export Plot_History
 
-end # module FixedPointToolbox
+end # module FixedPointToolkit

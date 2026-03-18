@@ -1,7 +1,7 @@
-using FixedPointToolbox
+using FixedPointToolkit
 using Test
 
-@testset "FixedPointToolbox.jl" begin
+@testset "FixedPointToolkit.jl" begin
     include("ScalarFunction.jl")
     include("VectorFunction.jl")
 end

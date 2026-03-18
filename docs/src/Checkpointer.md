@@ -1,7 +1,7 @@
-# FixedPointToolbox.Checkpointer
+# FixedPointToolkit.Checkpointer
 
 ```@autodocs
-Modules = [FixedPointToolbox, FixedPointToolbox.Checkpointer]
+Modules = [FixedPointToolkit, FixedPointToolkit.Checkpointer]
 Private = false
 Pages   = ["Checkpointer.jl"]
 ```

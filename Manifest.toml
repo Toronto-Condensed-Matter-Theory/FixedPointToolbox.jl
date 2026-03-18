@@ -183,7 +183,7 @@ git-tree-sha1 = "05882d6995ae5c12bb5f36dd2ed3f61c98cbb172"
 uuid = "53c48c17-4a7d-5ca2-90c5-79b7896eea93"
 version = "0.8.5"
 
-[[deps.FixedPointToolbox]]
+[[deps.FixedPointToolkit]]
 deps = ["JLD2", "LinearAlgebra", "Logging", "Plots"]
 path = "."
 uuid = "0de1d71a-ce40-41ac-9724-bc943b23ae8b"

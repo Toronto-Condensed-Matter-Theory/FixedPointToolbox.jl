@@ -1,4 +1,4 @@
-using Test, FixedPointToolbox, LinearAlgebra
+using Test, FixedPointToolkit, LinearAlgebra
 
 """
 Lets find the fixed point of f(x) = cos(x) using three different methods.
